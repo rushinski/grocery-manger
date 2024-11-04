@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header class="title">
+        <h1 id="h1">Grocery List Organizer</h1>
+    </header>
+    <section class="wrapper">
+        <section class="search-bar-container">
+            <div class="search-box">
+                <ion-icon name="search-outline" class="ion-size-search" id="icon-search"></ion-icon>
+                <input type="text" class="search-bar" id="item" placeholder="Add groceries" value="">
+                <button class="ion-size-search add-item-btn" onclick="addItem()"><ion-icon name="add-outline"></ion-icon></button>
+            </div>
+        </section>
+        <div class="name-placeholder name-list"><h3>List</h3></div>
+        <section class="item-list" id="item-list-id">
+            <!-- <p style="text-align: center;"><s>test</s></p> -->
+        </section>
+
+        <div class="name-placeholder name-items"><h3>Items Left</h3><h3>Items Purchased</h3></div>
+        <section class="item-breakdown">
+            <div class="items-left" id="items-remaining-id"></div>
+            <div class="items-purchased" id="items-left-id"></div>
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
